@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Simplificado - CL4M</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light p-4">
+
+    <div class="container">
+        <div class="card shadow">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Inventario - Mobis-Dongwon</h5>
+                <div id="actionButtonsContainer" class="d-none">
+                    <button id="clearRecordsBtn" class="btn btn-sm btn-danger me-2">
+                        <i class="fa-solid fa-trash me-1"></i> Limpiar
+                    </button>
+                    <button id="copyReportBtn" class="btn btn-sm btn-success">
+                        <i class="fa-solid fa-copy me-1"></i> Copiar Reporte
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered align-middle mb-0">
+                    <thead class="header-cell">
+                        <tr>
+                            <th colspan="2">Part Name</th>
+                            <th>Option</th>
+                            <th>PART No.</th>
+                            <th>Qty/Box</th>
+                            <th style="width: 50px;"></th>
+                            <th>Registros</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="19" class="table-vertical-header">CL4M</td>
+                            <td rowspan="4" class="cat-label">BUMPER</td>
+                            <td>GEN, M.EAST</td>
+                            <td>64900-GG000</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>GEN, M.EAST, CAN, USA</td>
+                            <td>64900-GG010</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>GEN, EUR, RUS, MEX</td>
+                            <td>64900-GG100</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>GEN, EUR, AUS, USA, RUS, MEX</td>
+                            <td>64900-GG110</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3" class="cat-label"></td>
+                            <td>GEN-5DR/ WGN</td>
+                            <td>64900-GG200</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>GEN-5DR/ WGN</td>
+                            <td>64900-GG210</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td>GEN-HEV</td>
+                            <td>64900-JF000</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="5" class="cat-label">COWL CROSS</td>
+                            <td>CAN, USA</td>
+                            <td>84410-GG000</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>GEN, EUR, MEX</td>
+                            <td>84410-GG100</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>RUSSIA</td>
+                            <td>84410-GG200</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>RUSSIA</td>
+                            <td>84410-GG300</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>GEN, EUR, AUS</td>
+                            <td>84410-GG900</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td class="cat-label">BRKT-FR BPR UPR SUPT</td>
+                            <td>KNEE BOLSTER</td>
+                            <td>86556-GG000</td>
+                            <td class="text-center">200</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4" class="cat-label">MEMBER</td>
+                            <td>SIDE LH</td>
+                            <td>64111-GG000</td>
+                            <td class="text-center">256</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>SIDE RH</td>
+                            <td>64121-GG000</td>
+                            <td class="text-center">256</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>SIDE 5DR LH</td>
+                            <td>64111-GG500</td>
+                            <td class="text-center">256</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>SIDE 5DR RH</td>
+                            <td>64121-GG500</td>
+                            <td class="text-center">256</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2" class="cat-label">DIV CHNL</td>
+                            <td>LH</td>
+                            <td>83510-GG000</td>
+                            <td class="text-center">1000</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>RH</td>
+                            <td>83520-GG000</td>
+                            <td class="text-center">1000</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <!-- NEW SECTION FOR BL7M -->
+                        <tr>
+                            <td rowspan="4" class="table-vertical-header">BL7M</td>
+                            <td class="cat-label">CARRIER</td>
+                            <td>ALL</td>
+                            <td>64101-BC000</td>
+                            <td class="text-center">21</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td class="cat-label">BUMPER</td>
+                            <td>ALL</td>
+                            <td>64900-BC000</td>
+                            <td class="text-center">28</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="cat-label">COWL CROSS</td>
+                            <td>NORTH AMERICA</td>
+                            <td>84410-BC100</td>
+                            <td class="text-center">9</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+                        <tr>
+                            <td>ESTÁNDAR</td>
+                            <td>84410-BC300</td>
+                            <td class="text-center">9</td>
+                            <td class="text-center">
+                                <button class="btn btn-sm btn-primary py-0 px-2" title="Agregar"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </td>
+                            <td class="registros-cell p-2"></td>
+                            <td class="text-center fw-bold total-cell">-</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card-footer bg-white text-end">
+                <!-- <button class="btn btn-primary px-5">Guardar Registro</button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Part Details -->
+    <div class="modal fade" id="partModal" tabindex="-1" aria-labelledby="partModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="partModalLabel">Número de Parte</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-3">Ingrese la información correspondiente para la parte actual.</p>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Cantidad Revisada</label>
+                        <input type="number" class="form-control" placeholder="Ej. 10" min="0">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tipo de Empaque</label>
+                        <select class="form-select">
+                            <option value="">Seleccionar</option>
+                            <option value="piezas">Piezas</option>
+                            <option value="pallets">Pallets</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

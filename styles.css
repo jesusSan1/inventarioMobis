@@ -1,0 +1,38 @@
+.table-vertical-header {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: #212529;
+    color: white;
+    width: 45px;
+}
+
+.header-cell {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cat-label {
+    background-color: #f1f3f5;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.rampa-input {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    /* Para que los palitos se vean alineados */
+}
+
+.rampa-input:focus {
+    background-color: #fff9db;
+    outline: none;
+    border-color: #ffc107;
+}
