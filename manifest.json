@@ -1,8 +1,8 @@
 {
   "name": "Inventario Mobis",
   "short_name": "Inventario",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "/inventarioMobis/index.html",
+  "scope": "/inventarioMobis/",
   "display": "standalone",
   "background_color": "#212529",
   "theme_color": "#212529",
