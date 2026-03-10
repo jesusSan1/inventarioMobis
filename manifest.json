@@ -3,7 +3,7 @@
   "short_name": "Inventario",
   "start_url": ".",
   "scope": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#212529",
   "theme_color": "#212529",
   "description": "App de inventario para Mobis, optimizada para móvil.",
